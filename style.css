@@ -65,3 +65,197 @@ body{
      color: white !important;
      font-size: 50px;
  }
+
+
+
+
+
+ .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    line-height: 50px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* ====================
+            header end 
+ ========================== */
+
+/* ====================
+            testimonial start 
+ ========================== */
+
+
+.bg-5 {
+    background-image: url("http://regaltheme.com/tf/multi/rnr/assets/img/bg/5.png");
+    background-position: center 65%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.client-testimonial .client-nav .nav-item {
+  position: absolute;
+  z-index: 5;
+  width: 10.5rem; }
+  .client-testimonial .client-nav .nav-item:nth-child(1) {
+    top: 2.5rem;
+    right: 16%;
+    width: 7rem; }
+  .client-testimonial .client-nav .nav-item:nth-child(2) {
+    bottom: 3rem;
+    right: 0; }
+    @media (min-width: 1281px) {
+      .client-testimonial .client-nav .nav-item:nth-child(2) {
+        right: -3rem; } }
+  .client-testimonial .client-nav .nav-item:nth-child(3) {
+    bottom: 9rem;
+    left: 4%; }
+  .client-testimonial .client-nav .nav-item:nth-child(4) {
+    top: -2rem;
+    left: 0;
+    width: 7rem; }
+    @media (min-width: 1281px) {
+      .client-testimonial .client-nav .nav-item:nth-child(4) {
+        left: -8rem; } }
+  .client-testimonial .client-nav .nav-item:nth-child(5) {
+    top: -9rem;
+    right: 0;
+    width: 7rem; }
+    @media (min-width: 1281px) {
+      .client-testimonial .client-nav .nav-item:nth-child(5) {
+        right: -5.5rem; } }
+  @media (max-width: 767.98px) {
+    .client-testimonial .client-nav .nav-item {
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: inherit;
+      width: 7rem !important; } }
+
+.client-testimonial .tab-content .fade {
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+
+.client-testimonial .tab-content .client-thumb {
+  width: 10.5rem; }
+
+.client-testimonial .tab-content .client-desc {
+  -webkit-box-shadow: 0px 15px 50px 0px rgba(115, 115, 115, 0.06);
+  box-shadow: 0px 15px 50px 0px rgba(115, 115, 115, 0.06);
+  min-height: 21rem;
+  padding: 2rem; }
+  .client-testimonial .tab-content .client-desc h6 {
+    font-size: 1.3rem; }
+.section-ptb, .section-pt, .section-pb {
+  padding-top: 12rem;
+  padding-bottom: 12rem; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .section-ptb, .section-pt, .section-pb {
+      padding-top: 8rem;
+      padding-bottom: 8rem; } }
+  @media (max-width: 767.98px) {
+    .section-ptb, .section-pt, .section-pb {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
+      hr.line {
+  margin: 0;
+  border-color: #1c223a;
+  border-width: 1px;
+  width: 4.5rem; }
+  hr.line.line-sm {
+    width: 8.6rem;
+}
+hr.line.bw-2 {
+    border-width: 2px;
+}
+.author-img{
+    border-radius: 10% 60%;
+}
+.mb-5 {
+    margin-bottom: 0.5rem !important;
+}
+.mb-80 {
+  margin-bottom: 8rem !important; }
+  .mb-20 {
+  margin-bottom: 2rem !important; }
+  .mb-25 {
+  margin-bottom: 2.5rem !important; }
+img {
+  max-width: 100%; }
+.toast-alert{
+    background-color: white;
+    width: 40%;
+    border: 0;
+    border-left: 4px solid rgb(0, 63, 197);
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: -15%;
+}
+@media (max-width:768px) {
+    img {
+        max-width: 100%; }
+      .toast-alert{
+          width: 100%;
+         
+      }
+}
+/* ====================
+            testimonial end 
+ ========================== */
