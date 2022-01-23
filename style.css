@@ -41,7 +41,9 @@ body{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
-
+.navbar-nav li{
+    margin: 0 18px;
+}
   .navbar-toggler,
   .navbar-toggler:focus,
   .navbar-toggler:active,
@@ -267,12 +269,12 @@ img {
 /* ====================
             card section start 
  ========================== */
- .card-third{
+ .card-third {
     padding: 30px 16px;
     border-radius: 27px;
-    box-shadow: -1px 6px 14px 0px #808080b8;
+    box-shadow: 0px 20px 20px 3px #808080b8;
     margin-top: -58px;
- }
+}
  section#service h2 {
     font-size: 22px;
 }
@@ -290,3 +292,15 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 } 
+
+/* .accordion-button:focus {
+    border-color: none;
+    box-shadow: none;
+} */
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: none;
+}
