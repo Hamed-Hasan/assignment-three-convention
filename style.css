@@ -282,3 +282,11 @@ img {
 /* ====================
             card section end 
  ========================== */
+ /* ====================
+            form section start 
+ ========================== */
+#form{
+    background: url("images/form-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
