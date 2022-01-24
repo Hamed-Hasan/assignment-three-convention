@@ -16,7 +16,7 @@ body {
 
 @media (max-width:768px) {
     .carousel-item .w-100 {
-        height: 38vh;
+        height: 50vh;
     }
 }
 
@@ -73,8 +73,18 @@ body {
     pointer-events: none;
 }
 
-.carousel-caption {
-    z-index: 100;
+.carousel-caption,
+#carouselExampleCaptions {
+    z-index: 100 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #fff !important;
+    padding: 1px 7px !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #fff !important;
 }
 
 .fa-chevron-left,
